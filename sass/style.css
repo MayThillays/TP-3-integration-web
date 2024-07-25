@@ -1,5 +1,32 @@
 /* Couleurs */
 /* Typographie */
-nav {
+.navbar-header {
   background-color: #CA8E82;
+}
+
+.icon__e-commerce {
+  font-size: 3rem;
+}
+
+.large__icon {
+  color: #CA8E82;
+}
+
+.text__icons {
+  color: #CA8E82;
+}
+
+.footer__elements {
+  background-color: #F2D6CE;
+}
+
+.footer__info {
+  background-color: #CA8E82;
+}
+
+.container1200 {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

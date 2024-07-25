@@ -1,83 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madame Chamotte</title>
-    <link rel="icon" type="image/x-icon" href="favicon1.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="sass/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="scripts/validation.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madame Chamotte</title>
+  <link rel="icon" type="image/x-icon" href="favicon1.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="scripts/validation.js"></script>
 </head>
+
 <body>
+  <div class="container1200">
     <header>
-<div class="flex flex-wrap place-items-center h-screen">
-    <section class="relative mx-auto">
-        <!-- navbar -->
-      <nav class="flex justify-between text-white w-screen">
-        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-          <a class="text-3xl font-bold font-heading" href="index.html">
-            <img class="logo h-28" src="images/transparent-logo.png" alt="logo Madame Chamotte">
-          </a>
-          <!-- Nav Links -->
-          <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-            <li><a class="hover:text-gray-200" href="index.html">Accueil</a></li>
-            <li><a class="hover:text-gray-200" href="produits.html">Produits</a></li>
-            <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
-            <li><a class="hover:text-gray-200" href="blog.html">Blog</a></li>
-          </ul>
-          <!-- Header Icons -->
-          <div class="hidden xl:flex space-x-5 items-center">
-            <a class="hover:text-gray-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
+      <div class="flex flex-wrap place-items-center">
+        <!-- Navbar  Tailwind-->
+        <nav class=" navbar-header flex justify-between text-white w-screen">
+          <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="index.html">
+              <img class="logo h-28" src="images/transparent-logo.png" alt="logo Madame Chamotte">
             </a>
-            <a class="flex items-center hover:text-gray-200" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+              <li><a class="hover:text-gray-200" href="index.html">Accueil</a></li>
+              <li><a class="hover:text-gray-200" href="produits.html">Produits</a></li>
+              <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
+              <li><a class="hover:text-gray-200" href="blog.html">Blog</a></li>
+            </ul>
+            <!-- Header Icons -->
+            <div class="hidden xl:flex space-x-5 items-center">
+              <a class="hover:text-gray-200" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
-              <span class="flex absolute -mt-5 ml-4">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+              </a>
+              <a class="flex items-center hover:text-gray-200" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="flex absolute -mt-5 ml-4">
+                  <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
                   </span>
                 </span>
-            </a>
-            <!-- Sign In / Register      -->
-            <a class="flex items-center hover:text-gray-200" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </a>
+              <!-- Sign In / Register      -->
+              <a class="flex items-center hover:text-gray-200" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-            </a>
-            
+              </a>
+
+            </div>
           </div>
-        </div>
-        <!-- Responsive navbar -->
-        <a class="xl:hidden flex mr-6 items-center" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-          <span class="flex absolute -mt-5 ml-4">
-            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-            </span>
-          </span>
-        </a>
-        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <!-- Responsive navbar -->
+          <a class="xl:hidden flex mr-6 items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-        </a>
-      </nav>
-      
-    </section>
-  </div>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+              </span>
+            </span>
+          </a>
+          <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+      <div class="banner">
+        <img src="images/banner-1.png" alt="bannière du site Madame Chamotte">
+      </div>
     </header>
+
+    <!-- Cards des meilleures ventes boutiques -->
+
+    <h1 class="text-2xl leading-none tracking-tight md:text-5xl lg:text-6xl dark:text-white text-center p-10">Les meilleures ventes:</h1>
+<div class="p-10 flex flex-wrap items-center justify-center">
     
+  <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg">
+    <div class="relative pt-10 px-10 flex items-center justify-center">
+      <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+      <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+    </div>
+    <div class="relative text-black px-6 pb-6 mt-6">
+      <span class="block opacity-75 -mb-1">Indoor</span>
+      <div class="flex justify-between">
+        <span class="block font-semibold text-xl">Peace Lily</span>
+        <span class="block bg-black rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$36.00</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg">
+    <div class="relative pt-10 px-10 flex items-center justify-center">
+      <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+      <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069998-305de300-cc9a-11e9-8ae7-5a0fe00299f2.png" alt="">
+    </div>
+    <div class="relative text-black px-6 pb-6 mt-6">
+      <span class="block opacity-75 -mb-1">Outdoor</span>
+      <div class="flex justify-between">
+        <span class="block font-semibold text-xl">Monstera</span>
+        <span class="block bg-black rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$45.00</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg">
+    <div class="relative pt-10 px-10 flex items-center justify-center">
+      <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+      <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+    </div>
+    <div class="relative text-black px-6 pb-6 mt-6">
+      <span class="block opacity-75 -mb-1">Outdoor</span>
+      <div class="flex justify-between">
+        <span class="block font-semibold text-xl">Oak Tree</span>
+        <span class="block bg-black rounded-full text-purple-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$68.50</span>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+    <!-- Cards avec icônes (Tailwind + font awesome)-->
+<div
+	class='flex sm:flex-row space-y-2 sm:space-x-2 flex-row w-full items-center'>
+	<div
+		class='flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md'>
+		<div class="flex justify-between w-full">
+		</div>
+		<div>
+			<div class="font-bold text-5xl text-center">
+				<i class="fa fa-building-o large__icon p-2" aria-hidden="true"></i>
+			</div>
+			<div class="text-center">
+        <p class="text-xl font-bold mb-2 text__icons">15</p>
+        <p class="text-base text-gray-400 font-normal">Magasins Artisanaux</p>
+			</div>
+		</div>
+	</div>
+	<div
+		class='flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md'>
+		<div class="flex justify-between w-full">
+		</div>
+		<div>
+			<div class="font-bold text-5xl text-center">
+				<i class="fa fa-leaf large__icon p-2" aria-hidden="true"></i>
+			</div>
+			<div class="text-center">
+        <p class="text-xl font-bold mb-2 text__icons">25</p>
+        <p class="text-base text-gray-400 font-normal">Produits Organiques</p>
+			</div>
+		</div>
+	</div>
+	<div
+		class='flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md'>
+		<div class="flex justify-between w-full">
+		</div>
+		<div>
+			<div class="font-bold text-5xl text-center">
+				<i class="fa fa-smile-o large__icon p-2" aria-hidden="true"></i>
+			</div>
+			<div class="text-center">
+        <p class="text-xl font-bold mb-2 text__icons">20K</p>
+        <p class="text-base text-gray-400 font-normal">Clients Satisfaits</p>
+			</div>
+		</div>
+	</div>
+	<div
+		class='flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md'>
+		<div class="flex justify-between w-full">
+		</div>
+		<div>
+			<div class="font-bold text-5xl text-center">
+				<i class="fa fa-eyedropper large__icon p-2" aria-hidden="true"></i>
+			</div>
+			<div class="text-center">
+        <p class="text-xl font-bold mb-2 text__icons"">65</p>
+        <p class="text-base text-gray-400 font-normal">Experts Beauté</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <!-- footer Tailwind -->
+<div class="flex items-end w-full min-h-screen bg-white">
+
+  <footer class="footer__elements w-full text-gray-700 body-font">
+      <div
+          class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+          <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+              <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                  <img class="logo-footer" src="images/transparent-logo.png" alt="logo Madame Chamotte">
+              </a>
+              <div class="mt-4">
+                  <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              class="w-5 h-5" viewBox="0 0 24 24">
+                              <path
+                                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                              </path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path stroke="none"
+                                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                              </path>
+                              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                          </svg>
+                      </a>
+                  </span>
+              </div>
+          </div>
+          <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">A Propos</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Notre Histoire</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Carrières</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Plan du Site</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Conditions Générales de Vente</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Ressources
+                  </h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Politique de retour</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a href="mailto:info@mmechamotte.com" class="text-gray-500 cursor-pointer hover:text-gray-900">info@mmechamotte.com</a>
+                      </li>
+                      <li class="mt-3">
+                          <a href="tel:+05-55-40-16-58" class="text-gray-500 cursor-pointer hover:text-gray-900">05-55-40-16-58</a>
+                      </li>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class="footer__info">
+          <div class="container px-5 py-4 mx-auto">
+              <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 Maybelline Thillays - Cégep de Trois Rivières </p>
+          </div>
+      </div>
+  </footer>
+
+</div>
+  </div>
 </body>
+
 </html>

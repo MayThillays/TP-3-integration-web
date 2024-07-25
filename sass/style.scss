@@ -1,4 +1,13 @@
 @use 'variables' as *;
 @use 'navbar' as *;
+@use 'ecommerce-section' as *;
 @use 'footer' as *;
+@use 'buttons' as *;
 @use 'responsive' as *;
+
+.container1200{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
