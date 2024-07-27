@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+
+.container__form-and-iframe{
+    display: flex;
+    background-color: rgb(250, 198, 234);
+}
+
+.container__form{
+    padding: 1rem;
+}
+
+.personal-informations__container{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
+}
+
+.skin-informations__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+}
+
+.skin-informations__product, .skin-informations__skin-type{
+    margin-bottom: 1rem;
+}
+
+input, select{
+    border: 1px solid grey;
+    padding: 0.4rem;
+}
+
+span{
+    color: red;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.button__container{
+    display: flex;
+   justify-content: flex-end;
+}
+
+.button__submit-form{
+    background-color: $pink;
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: $white;
+    font-weight: 600
+}
