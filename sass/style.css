@@ -42,6 +42,10 @@
   background-color: #F2D6CE;
 }
 
+.title__form {
+  margin: 1rem 0rem 1.5rem 2.2rem;
+}
+
 .container__form {
   padding: 1rem;
 }
