@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+/* classes CSS pour la validation du formulaire */
+
+.input-control.sucess input{
+    border-color: $green;
+}
+
+.input-control.error input{
+    border-color: $red;
+}
+
+.input-control .error{
+    color: $red;
+    font-size: 0.9em;
+    height: 20px;
+}

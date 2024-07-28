@@ -3,11 +3,16 @@
 
 .container__form-and-iframe{
     display: flex;
-    background-color: rgb(250, 198, 234);
+    align-items: center;
+    background-color: $light-pink;
 }
 
 .container__form{
     padding: 1rem;
+}
+
+iframe{
+    margin-left: 2rem;
 }
 
 .personal-informations__container{

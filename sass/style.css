@@ -38,11 +38,16 @@
 
 .container__form-and-iframe {
   display: flex;
-  background-color: rgb(250, 198, 234);
+  align-items: center;
+  background-color: #F2D6CE;
 }
 
 .container__form {
   padding: 1rem;
+}
+
+iframe {
+  margin-left: 2rem;
 }
 
 .personal-informations__container {
@@ -81,8 +86,23 @@ span {
   background-color: #CA8E82;
   padding: 0.8rem;
   border-radius: 10px;
-  color: #f2e7dd;
+  color: #fdfdfd;
   font-weight: 600;
+}
+
+/* classes CSS pour la validation du formulaire */
+.input-control.sucess input {
+  border-color: #40BB07;
+}
+
+.input-control.error input {
+  border-color: #EC5439;
+}
+
+.input-control .error {
+  color: #EC5439;
+  font-size: 0.9em;
+  height: 20px;
 }
 
 .container1200 {
