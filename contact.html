@@ -176,15 +176,24 @@
         </section>
 
         <section class="newsletter-section">
-            <label class="newsletter-section__label" for="email-client">Inscris-toi à notre newsletter pour
-                découvrir nos nouveaux produits!</label>
-
-            <div class="newsletter-section__input-button">
-                <input type="email" id="email-client" name="email-client">
-                <div class="button">
-                    <input class="button__submit button__submit--hover" type="submit" value="Envoyer">
+            <div class="2xl:mx-auto 2xl:container mx-4 py-16">
+                <div class="w-full relative flex items-center justify-center">
+                  <img src="images/stay-tuned.png" alt="restes-informé de nos nouveautés" class="w-full h-full absolute z-0 hidden xl:block" />
+                  <img src="images/stay-tuned-tablet.png" alt="restes-informé de nos nouveautés" class="w-full h-full absolute z-0 hidden sm:block xl:hidden" />
+                  <img src="images/stay-tuned-mobile.png" alt="restes-informé de nos nouveautés" class="w-full h-full absolute z-0 sm:hidden" />
+                  <div class="bg-gray-800 bg-opacity-80 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
+                    <h1 class="text-4xl font-semibold leading-9 text-white text-center">Ne rates pas nos nouveautés!</h1>
+                    <p class="text-base leading-normal text-center text-white mt-6">
+                      Inscris-toi à notre newsletter afin de rester informé. Nous l'envoyons 1 fois par semaine chaque vendredi pour te tenir au courant de nos sorties produits et de nos promotions.<br />
+                      
+                    </p>
+                    <div class="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+                      <input class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white" placeholder="Adresse courriel" />
+                      <button class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">S'inscrire</button>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </section>
 
         <section>
@@ -214,19 +223,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- footer Tailwind -->
         <div class="flex items-end w-full bg-white">
