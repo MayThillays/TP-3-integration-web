@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+/*-- MEDIA QUERIES --*/
+
+/*Tablettes */
+
+
+@media (min-width:981px) and (max-width:1200px) {
+    
+    .container__form-and-iframe{
+        flex-direction: column;
+    }
+
+    .container__form{
+        flex-wrap: wrap;
+    }
+
+    .skin-informations__container{
+        width: 50%;
+        margin-left: 6rem;
+    }
+}
+
+
+
+/*Mobiles */
+
+@media only screen and (max-width: 980px) {
+
+    .container__form-and-iframe{
+        flex-direction: column;
+    }
+
+    .container__form{
+        flex-wrap: wrap;
+        width:65%;
+    }
+
+    .personal-informations__container{
+      flex-wrap: wrap;
+    }
+    
+    .skin-informations__container{
+        margin-bottom: 1rem;
+    }
+
+    .button__container{
+       justify-content: center;
+    }
+
+
+}

@@ -75,7 +75,7 @@ input, select {
   padding: 0.4rem;
 }
 
-span {
+.required-field {
   color: red;
   font-weight: 500;
   font-size: 1.3rem;
@@ -92,6 +92,11 @@ span {
   border-radius: 10px;
   color: #fdfdfd;
   font-weight: 600;
+  border: none;
+}
+
+.button__submit--hover:hover {
+  background-color: #6b6a6a;
 }
 
 /* classes CSS pour la validation du formulaire */
@@ -109,9 +114,50 @@ span {
   height: 20px;
 }
 
+/*-- MEDIA QUERIES --*/
+/*Tablettes */
+@media (min-width: 981px) and (max-width: 1200px) {
+  .container__form-and-iframe {
+    flex-direction: column;
+  }
+  .container__form {
+    flex-wrap: wrap;
+  }
+  .skin-informations__container {
+    width: 50%;
+    margin-left: 6rem;
+  }
+}
+/*Mobiles */
+@media only screen and (max-width: 980px) {
+  .container__form-and-iframe {
+    flex-direction: column;
+  }
+  .container__form {
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  .personal-informations__container {
+    flex-wrap: wrap;
+  }
+  .skin-informations__container {
+    margin-bottom: 1rem;
+  }
+  .button__container {
+    justify-content: center;
+  }
+}
 .container1200 {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: satisfy;
+}
+
+body {
+  font-family: lato;
 }/*# sourceMappingURL=style.css.map */
