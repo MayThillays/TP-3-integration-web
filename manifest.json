@@ -1,13 +1,13 @@
 {
 "name": "Madame Chamotte",
-"short_name": "Mme Chamotte",
-"start_url": "The URL that should be loaded when your application is opened",
+"short_name": "Chamotte",
+"start_url": "/index.html",
 "display": "standalone",
 "description": "La Boutique cosmétique Madame Chamotte",
 "lang": "french",
 "dir": "auto",
-"theme_color": "#000000",
-"background_color": "#000000",
+"theme_color": "#F2D6CE",
+"background_color": "#F2E7DD",
 "orientation": "any",
 "icons": [
     {
@@ -40,7 +40,7 @@
 "prefer_related_applications": false,
 "shortcuts": [
     {
-        "name":"The name you would like to be displayed for your shortcut",
+        "name":"Mme Chamotte, boutique de cosmétiques bio",
         "url":"The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
         "description":"A description of the functionality of this shortcut"
     }
