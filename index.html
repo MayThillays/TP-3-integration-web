@@ -15,8 +15,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="manifest" href="manifest.json" />  
-  <script>navigator.serviceWorker.register("service-worker.js")</script> 
+  <link rel="manifest" href="manifest.json" />
+  <script>navigator.serviceWorker.register("service-worker.js")</script>
   <script defer src="scripts/validation.js"></script>
 </head>
 
@@ -380,5 +380,17 @@
     </div>
   </div>
 </body>
+
+<script>
+  // Register service worker.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+    });
+  }
+</script>
 
 </html>
