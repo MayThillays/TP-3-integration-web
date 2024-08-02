@@ -3,7 +3,6 @@
     "short_name": "Chamotte",
     "start_url": "https://maythillays.github.io/TP-3-integration-web/",
     "display": "standalone",
-    "display_override": ["standalone", "fullscreen"],
     "description": "La Boutique cosmétique Madame Chamotte",
     "lang": "fr",
     "dir": "auto",
