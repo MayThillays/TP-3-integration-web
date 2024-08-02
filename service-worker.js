@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v3';
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -44,7 +44,7 @@ self.addEventListener('fetch', (evt) => {
     evt.respondWith(
         fetch(evt.request).catch(() => {
             return caches.open(CACHE_NAME).then((cache) => {
-                return cache.match('offline.html');
+                return cache.match("/maythillays/TP-3-integration-web/offline.html");
             });
         })
     );
