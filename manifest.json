@@ -12,13 +12,13 @@
     "orientation": "any",
     "icons": [
         {
-            "src": "TP-3-integration-web/icons/icon_512_maskable.png",   
+            "src": "/TP-3-integration-web/icons/icon_512_maskable.png",   
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src": "TP-3-integration-web/icons/icon_192.png", 
+            "src": "/TP-3-integration-web/icons/icon_192.png", 
             "sizes": "192x192",
             "type": "image/png"
         }
