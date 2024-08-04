@@ -17,23 +17,38 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Le Manifest -->
-  <link rel="manifest" href="manifest.json"/>
+  <link rel="manifest" href="manifest.json" />
 
   <!-- Requis Lighthouse: (description + theme-color) -->
   <meta name="description" content="La Boutique cosmétique Madame Chamotte">
   <meta name="theme-color" content="#F2D6CE">
-  
+
 
   <!-- Add IOS meta tags and icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" >
-  <meta name="apple-mobile-web-app-title" content="Madame-Chamotte" >
-  <link rel="apple-touch-icon" href="images/icons/icon_192.png" >
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Madame-Chamotte">
+  <link rel="apple-touch-icon" href="images/icons/icon_192.png">
 
   <!-- Service Worker -->
-  <script>navigator.serviceWorker.register("service-worker.js")</script>
+  <!-- 
+  <script>navigator.serviceWorker.register("service-worker.js")</script>-->
+
+  <script>
+    / Register service worker.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+      });
+    }
+  </script>
+
+
   <script defer src="scripts/validation.js"></script>
 </head>
 
@@ -49,7 +64,8 @@
             </a>
             <!-- Nav Links -->
             <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-              <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
+              <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la
+                PWA</button>
               <li><a class="hover:text-gray-200" href="index.html">Accueil</a></li>
               <li><a class="hover:text-gray-200" href="produits.html">Produits</a></li>
               <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
