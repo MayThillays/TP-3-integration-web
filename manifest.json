@@ -30,10 +30,10 @@
     ],
     "screenshots": [
         {
-            "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+            "src": "/TP-3-integration-web/images/screenshot.png",
             "sizes": "2880x1800",
             "type": "image/png",
-            "description": "A screenshot of the home page"
+            "description": "Un screenshot de la page d'accueil"
         }
     ]   
 }
