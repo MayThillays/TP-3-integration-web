@@ -15,7 +15,7 @@
             "src": "/TP-3-integration-web/images/icons/icon_512_maskable.png",   
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable"
         },
         {
             "src": "/TP-3-integration-web/images/icons/icon_192.png", 
