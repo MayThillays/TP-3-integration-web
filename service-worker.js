@@ -9,7 +9,7 @@ const FILES_TO_CACHE = [
 
 //INSTALLATION
 self.addEventListener('install', (evt) => {
-    console.log('[ServiceWorker] Service Worker en marche!');
+    console.log('[ServiceWorker] Install');
     // Precache static resources here. MISE EN CACHE
     evt.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
