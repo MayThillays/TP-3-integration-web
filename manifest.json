@@ -21,7 +21,7 @@
             "src": "/TP-3-integration-web/icons/icon_192.png", 
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "any"
+            "purpose": "maskable"
         }
     ],
     "screenshots": [
