@@ -32,24 +32,5 @@
             "description": "A screenshot of the home page"
         }
     ],
-    "related_applications": [
-        {
-            "platform": "windows",
-            "url": "The URL to your app in that app store"
-        }
-    ],
-    "prefer_related_applications": false,
-    "shortcuts": [
-        {
-            "name": "Mme Chamotte, boutique de cosmétiques bio",
-            "url": "/shortcut",
-            "description": "A description of the functionality of this shortcut"
-        }
-    ],
-    "protocol_handlers": [
-        {
-            "protocol": "web+madamechamotte",
-            "url": "/?url=%s"
-        }
-    ]
+    
 }
