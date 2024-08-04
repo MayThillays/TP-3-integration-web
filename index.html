@@ -17,7 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Le Manifest -->
   <link rel="manifest" href="manifest.json"/>
+
+  <!-- Requis Lighthouse: (description + theme-color) -->
+  <meta name="description" content="La Boutique cosmétique Madame Chamotte">
+  <meta name="theme-color" content="#F2D6CE">
+  
 
   <!-- Add IOS meta tags and icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,6 +32,7 @@
   <meta name="apple-mobile-web-app-title" content="Madame-Chamotte" >
   <link rel="apple-touch-icon" href="images/icons/icon_192.png" >
 
+  <!-- Service Worker -->
   <script>navigator.serviceWorker.register("service-worker.js")</script>
   <script defer src="scripts/validation.js"></script>
 </head>
